@@ -6,6 +6,27 @@
 //If a number is not divisible by either 3 or 5, log the number
 console.log('Part 1-Fizz Buzz')
 
+// i would be the starting # and <= as it would need to count up to 100.
+for (let i = 1; i <= 100; i++) {  
+
+// statement to see if a number is divisible by 3 and 5, if so, logs Fizz Buzz
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("Fizz Buzz");
+      
+// If devisible by 3, log Fizz
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+
+// If divisible by 5, log Buzz
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+
+// If it is devisible by either 3 or 5, log the number
+  } else {
+    console.log(i);
+  }
+} 
+
 
 
 
@@ -14,7 +35,7 @@ console.log('Part 1-Fizz Buzz')
 // Create a loop that searches for the next prime number, starting at n and incrementing from there. 
 //As soon as you find the prime number, log that number and exit loop. 
 //Prime Numbers: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 
-console.log('Part 2- Primte Time')
+console.log('Part 2- Prime Time')
 
 let n = 9; // not a prime number
 
